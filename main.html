@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leno Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img
+              src="imagens/b6z4P4dC_400x400 1.png"
+              alt="LenoBot"
+            />
+            <div class="menu-section">
+              <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#"><h2>Comunidade</h2></a>
+                  </li>
+                  <li>
+                    <a href="#"><h2>Open Source</h2></a>
+                  </li>
+                  <li>
+                    <a href="#"><h2>Comandos</h2></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+    </header>
+    <section class="primeirasection">
+        <ul>
+            <li class="textos-sites">
+                <div class="nome-bot">
+                    <h1>Leno Bot</h1>
+                </div>
+                <div class="frase-bot">
+                    <h2>Um bot de música diferenciado</h1>
+                </div>
+                <div class="botao-bot">
+                    <a><button class="botao-adicionar-bot">Me adicione!</button></a>
+                </div>
+            </li>
+            <li class="fotoleno">
+                <div>
+                    <img src="imagens/3MliEYNV_400x400 1.png" alt="Foto-Leno">
+                </div>
+            </li>
+        </ul>
+    </section>
+    <hr class="hrone">
+    <section class="segundasection">
+        <div class="sobrele">
+            <h1>Sobre ele</h1>
+        </div>
+        <div class="sobre-o-bot">
+            <h2>Leno bot é um bot desenvolvido com a finalidade de entreter suas call no discord.</h2>
+        </div>
+        <div class="criador">
+            <h3>Foi desenvolvido pelo Eudes#7777 (nickname no discord).</h3>
+        </div>
+    </section>
+    <hr class="hrtwo">
+    <footer>
+        <div class="nomelenofooter">
+            <h1>Leno Bot</h1>
+        </div>
+    </footer>
+    <script>
+        let show = true; 
+
+            const menuSection = document.querySelector(".menu-section")
+            const menuToggle = menuSection.querySelector(".menu-toggle")
+
+            menuToggle.addEventListener("click", () => {
+
+                document.body.style.overflow = show ? "hidden" : "initial"
+
+                menuSection.classList.toggle("on", show)
+                show = !show;
+            })
+    </script>
+</body>
+</html>
